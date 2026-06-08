@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stories | Vision Security</title>
+  <meta name="description" content="Real client stories from the Roaring Fork Valley. Property managers, contractors, estate owners, and homeowners on why they choose Vision Security.">
+  <link rel="icon" type="image/svg+xml" href="assets/logos/VisSec_V.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+  
+</head>
+<body>
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand" aria-label="Vision Security home">
+      <img src="assets/logos/VisSec_blue.svg" alt="Vision Security">
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links">
+      <li>
+        <a href="#">Residential<span class="nav__caret">▾</span></a>
+        <ul class="nav__dropdown">
+          <li><a href="for/estate-owners.html">Estate Owners</a></li>
+          <li><a href="for/multi-property.html">Multi-Property Owners</a></li>
+          <li><a href="for/homeowners.html">Local Homeowners</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Commercial<span class="nav__caret">▾</span></a>
+        <ul class="nav__dropdown">
+          <li><a href="for/property-managers.html">Property Managers</a></li>
+          <li><a href="for/contractors.html">General Contractors</a></li>
+          <li><a href="for/hospitality.html">Resort &amp; Hospitality</a></li>
+          <li><a href="industries/commercial-real-estate.html">Office &amp; CRE</a></li>
+          <li><a href="industries/multi-family.html">Multi-Family</a></li>
+          <li><a href="industries/construction.html">Construction &amp; New Build</a></li>
+        </ul>
+      </li>
+      <li><a href="one-vision.html">One Vision</a></li>
+      <li>
+        <a href="#">Services<span class="nav__caret">▾</span></a>
+        <ul class="nav__dropdown">
+          <li><a href="services/index.html">All Services</a></li>
+          <li><a href="services/fire-alarm.html">Fire Alarm Systems</a></li>
+          <li><a href="services/security-systems.html">Security Systems</a></li>
+          <li><a href="services/video-surveillance.html">Video Surveillance</a></li>
+          <li><a href="services/access-control.html">Access Control</a></li>
+          <li><a href="services/inspections.html">Inspections &amp; Compliance</a></li>
+          <li><a href="services/monitoring.html">24/7 Monitoring</a></li>
+          <li><a href="services/maintenance.html">Service &amp; Maintenance</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Markets<span class="nav__caret">▾</span></a>
+        <ul class="nav__dropdown">
+          <li><a href="markets/aspen-co.html">Aspen</a></li>
+          <li><a href="markets/snowmass-village-co.html">Snowmass Village</a></li>
+          <li><a href="markets/basalt-co.html">Basalt</a></li>
+          <li><a href="markets/carbondale-co.html">Carbondale</a></li>
+          <li><a href="markets/el-jebel-co.html">El Jebel</a></li>
+          <li><a href="markets/glenwood-springs-co.html">Glenwood Springs</a></li>
+          <li><a href="markets/vail-co.html">Vail</a></li>
+          <li><a href="markets/avon-co.html">Avon</a></li>
+          <li><a href="markets/edwards-co.html">Edwards</a></li>
+          <li><a href="markets/gypsum-co.html">Gypsum</a></li>
+          <li><a href="markets/eagle-co.html">Eagle</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="stories.html">Stories</a></li>
+    </ul>
+    <div style="display:flex;gap:1.25rem;align-items:center;">
+      <a href="tel:9709454043" class="nav__phone">970-945-4043</a>
+      <a href="contact.html" class="nav__cta">Request Assessment</a>
+    </div>
+  </div>
+</nav>
+<header class="pageheader">
+  <div class="container">
+    <div class="pageheader__inner">
+      <div class="pageheader__card">
+        <div class="eyebrow" style="color:var(--sky-blue);">Stories</div>
+        <h1>From the people we protect.</h1>
+        <p>Real customers from real properties across the Roaring Fork Valley. Property managers, contractors, estate owners, homeowners. Their stories, in their own voice.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="story-filters" id="storyFilters">
+      <button class="story-filter is-active" data-filter="all">All Stories</button>
+      <button class="story-filter" data-filter="residential">Residential</button>
+      <button class="story-filter" data-filter="estate">Estate Owners</button>
+      <button class="story-filter" data-filter="property">Property Managers</button>
+      <button class="story-filter" data-filter="contractor">Contractors</button>
+      <button class="story-filter" data-filter="hospitality">Hospitality</button>
+    </div>
+
+    <div class="story-grid" id="storyGrid">
+      <a href="#story-marcus-whitfield" class="video-card" data-story-id="marcus-whitfield" data-audience="property" onclick="openStory(event, 'marcus-whitfield')">
+        <div class="video-card__poster" style="background:linear-gradient(135deg, #143A66 0%, #1B4F8A 60%, #0E2742 100%);"></div>
+        <div class="video-card__gradient"></div>
+        <div class="video-card__badge video-card__badge--demo">Demo</div>
+        <div class="video-card__play"></div>
+        <div class="video-card__body">
+          <p class="video-card__quote">"Their NICET team caught issues two other vendors missed. Back in compliance before AHJ re-inspection."</p>
+          <div class="video-card__person">
+            <div>
+              <div class="video-card__person-name">Marcus Whitfield</div>
+              <div class="video-card__person-role">Property Manager · Aspen, CO</div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#story-sarah-chen" class="video-card" data-story-id="sarah-chen" data-audience="residential" onclick="openStory(event, 'sarah-chen')">
+        <div class="video-card__poster" style="background:linear-gradient(135deg, #0E2742 0%, #1B4F8A 50%, #2A6FB5 100%);"></div>
+        <div class="video-card__gradient"></div>
+        <div class="video-card__badge video-card__badge--demo">Demo</div>
+        <div class="video-card__play"></div>
+        <div class="video-card__body">
+          <p class="video-card__quote">"They answer the phone every time. Two-week follow-up calls. I've had alarm companies for 20 years and never seen this level of service."</p>
+          <div class="video-card__person">
+            <div>
+              <div class="video-card__person-name">Sarah Chen</div>
+              <div class="video-card__person-role">Homeowner · Carbondale, CO</div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#story-james-halloran" class="video-card" data-story-id="james-halloran" data-audience="contractor" onclick="openStory(event, 'james-halloran')">
+        <div class="video-card__poster" style="background:linear-gradient(135deg, #1A1F26 0%, #143A66 60%, #1B4F8A 100%);"></div>
+        <div class="video-card__gradient"></div>
+        <div class="video-card__badge video-card__badge--demo">Demo</div>
+        <div class="video-card__play"></div>
+        <div class="video-card__body">
+          <p class="video-card__quote">"Inspections pass the first time. Every time. No permit delays. That's worth more than any line item on a bid."</p>
+          <div class="video-card__person">
+            <div>
+              <div class="video-card__person-name">James Halloran</div>
+              <div class="video-card__person-role">General Contractor · Halloran Builders</div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#story-linda-vasquez" class="video-card" data-story-id="linda-vasquez" data-audience="estate" onclick="openStory(event, 'linda-vasquez')">
+        <div class="video-card__poster" style="background:linear-gradient(135deg, #143A66 0%, #2A6FB5 60%, #4A8FD0 100%);"></div>
+        <div class="video-card__gradient"></div>
+        <div class="video-card__badge video-card__badge--demo">Demo</div>
+        <div class="video-card__play"></div>
+        <div class="video-card__body">
+          <p class="video-card__quote">"They handle our estate the way a private bank handles your money. Quiet, professional, never an intrusion."</p>
+          <div class="video-card__person">
+            <div>
+              <div class="video-card__person-name">Linda Vasquez</div>
+              <div class="video-card__person-role">Estate Owner · Snowmass Village</div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#story-david-riordan" class="video-card" data-story-id="david-riordan" data-audience="hospitality" onclick="openStory(event, 'david-riordan')">
+        <div class="video-card__poster" style="background:linear-gradient(135deg, #0E2742 0%, #1A1F26 50%, #143A66 100%);"></div>
+        <div class="video-card__gradient"></div>
+        <div class="video-card__badge video-card__badge--demo">Demo</div>
+        <div class="video-card__play"></div>
+        <div class="video-card__body">
+          <p class="video-card__quote">"Zero false alarms in 18 months. That's the difference between a five-star review and a one-star complaint."</p>
+          <div class="video-card__person">
+            <div>
+              <div class="video-card__person-name">David Riordan</div>
+              <div class="video-card__person-role">GM · Vail Mountain Lodge</div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#story-mike-carter" class="video-card" data-story-id="mike-carter" data-audience="residential" onclick="openStory(event, 'mike-carter')">
+        <div class="video-card__poster" style="background:linear-gradient(135deg, #1B4F8A 0%, #143A66 60%, #0E2742 100%);"></div>
+        <div class="video-card__gradient"></div>
+        <div class="video-card__badge video-card__badge--demo">Demo</div>
+        <div class="video-card__play"></div>
+        <div class="video-card__body">
+          <p class="video-card__quote">"Every home on one app. One specialist. One invoice. I should have switched to Vision Security five years ago."</p>
+          <div class="video-card__person">
+            <div>
+              <div class="video-card__person-name">Mike Carter</div>
+              <div class="video-card__person-role">Multi-Property Owner · Aspen & Vail</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tinted">
+  <div class="container">
+    <div class="section-intro" style="text-align:center;max-width:680px;margin:0 auto;">
+      <div class="eyebrow">Public &amp; Verified</div>
+      <h2>Or read what people say on Google.</h2>
+      <p class="lead">Our curated video stories above are paired with verified public Google reviews. Live, refreshed weekly, unfiltered.</p>
+    </div>
+    <div style="background:var(--cloud-white);border:1px solid rgba(27,79,138,0.12);border-radius:var(--radius-md);padding:1.5rem 2rem;max-width:760px;margin:2rem auto 0;display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;">
+      <div style="font-size:2rem;line-height:1;">★★★★★</div>
+      <div style="flex:1;min-width:240px;">
+        <div style="font-weight:600;color:var(--midnight);font-size:1rem;">Vision Security Google Business Profile</div>
+        <div style="font-size:0.9rem;color:var(--slate-gray);">In production, the most recent verified Google reviews refresh weekly via the Google Places API.</div>
+      </div>
+      <a href="https://www.google.com/search?q=vision+security+glenwood+springs" target="_blank" rel="noopener" class="btn btn--outline" style="font-size:0.86rem;padding:0.55rem 1rem;">View on Google &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-strip" id="contact">
+  <div class="container">
+    <h2>We answer the phone.</h2>
+    <p>Same-day scheduling with a NICET-certified specialist. Onsite assessment included with every proposal.</p>
+    <div style="display:flex;gap:0.875rem;justify-content:center;flex-wrap:wrap;">
+      <a href="tel:9709454043" class="btn btn--primary">Call 970-945-4043</a>
+      <a href="contact.html" class="btn btn--glass">Request a Callback &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== STORY MODAL ====== -->
+<div class="video-modal" id="storyModal" role="dialog" aria-modal="true" aria-hidden="true">
+  <button class="video-modal__close" aria-label="Close" onclick="closeStory()">×</button>
+  <div class="video-modal__content">
+    <div class="video-modal__player" id="modalPlayer">
+      <div>
+        <div style="font-size:0.9rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--sky-blue);font-weight:600;margin-bottom:0.5rem;">Prototype Demo</div>
+        <div style="color:rgba(255,255,255,0.9);font-size:1.04rem;line-height:1.5;max-width:480px;">In production, the testimonial video will embed here via YouTube or Vimeo. The card data on the right is what would surround the embedded player.</div>
+      </div>
+    </div>
+    <div class="video-modal__body" id="modalBody">
+      <h3 id="modalName">—</h3>
+      <div class="video-card__person-role" id="modalRole">—</div>
+      <p id="modalQuote">—</p>
+    </div>
+  </div>
+</div>
+
+<script>
+const STORIES = [{"id": "marcus-whitfield", "name": "Marcus Whitfield", "role": "Property Manager \u00b7 Aspen, CO", "audience": "property", "audience_label": "Property Managers", "quote": "Their NICET team caught issues two other vendors missed. Back in compliance before AHJ re-inspection.", "gradient": "linear-gradient(135deg, #143A66 0%, #1B4F8A 60%, #0E2742 100%)"}, {"id": "sarah-chen", "name": "Sarah Chen", "role": "Homeowner \u00b7 Carbondale, CO", "audience": "residential", "audience_label": "Local Homeowners", "quote": "They answer the phone every time. Two-week follow-up calls. I've had alarm companies for 20 years and never seen this level of service.", "gradient": "linear-gradient(135deg, #0E2742 0%, #1B4F8A 50%, #2A6FB5 100%)"}, {"id": "james-halloran", "name": "James Halloran", "role": "General Contractor \u00b7 Halloran Builders", "audience": "contractor", "audience_label": "General Contractors", "quote": "Inspections pass the first time. Every time. No permit delays. That's worth more than any line item on a bid.", "gradient": "linear-gradient(135deg, #1A1F26 0%, #143A66 60%, #1B4F8A 100%)"}, {"id": "linda-vasquez", "name": "Linda Vasquez", "role": "Estate Owner \u00b7 Snowmass Village", "audience": "estate", "audience_label": "Estate Owners", "quote": "They handle our estate the way a private bank handles your money. Quiet, professional, never an intrusion.", "gradient": "linear-gradient(135deg, #143A66 0%, #2A6FB5 60%, #4A8FD0 100%)"}, {"id": "david-riordan", "name": "David Riordan", "role": "GM \u00b7 Vail Mountain Lodge", "audience": "hospitality", "audience_label": "Hospitality", "quote": "Zero false alarms in 18 months. That's the difference between a five-star review and a one-star complaint.", "gradient": "linear-gradient(135deg, #0E2742 0%, #1A1F26 50%, #143A66 100%)"}, {"id": "mike-carter", "name": "Mike Carter", "role": "Multi-Property Owner \u00b7 Aspen & Vail", "audience": "residential", "audience_label": "Multi-Property Owners", "quote": "Every home on one app. One specialist. One invoice. I should have switched to Vision Security five years ago.", "gradient": "linear-gradient(135deg, #1B4F8A 0%, #143A66 60%, #0E2742 100%)"}];
+
+function openStory(e, id) {
+  if (e) e.preventDefault();
+  const s = STORIES.find(x => x.id === id);
+  if (!s) return;
+  document.getElementById('modalName').textContent = s.name;
+  document.getElementById('modalRole').textContent = s.role;
+  document.getElementById('modalQuote').textContent = '"' + s.quote + '"';
+  const m = document.getElementById('storyModal');
+  m.classList.add('is-open');
+  m.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+}
+function closeStory() {
+  const m = document.getElementById('storyModal');
+  m.classList.remove('is-open');
+  m.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+}
+document.getElementById('storyModal').addEventListener('click', e => { if (e.target.id === 'storyModal') closeStory(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeStory(); });
+
+// Filters
+const filterButtons = document.querySelectorAll('.story-filter');
+const cards = document.querySelectorAll('.story-grid .video-card');
+filterButtons.forEach(btn => btn.addEventListener('click', () => {
+  filterButtons.forEach(b => b.classList.remove('is-active'));
+  btn.classList.add('is-active');
+  const f = btn.dataset.filter;
+  cards.forEach(c => {
+    c.dataset.hidden = (f === 'all' || c.dataset.audience === f) ? 'false' : 'true';
+  });
+}));
+</script>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logos/VisSec_white.svg" alt="Vision Security">
+        <p class="footer__address">
+          3710 Highway 82, Suite #3<br>
+          Glenwood Springs, CO 81601<br>
+          <a href="tel:9709454043">970-945-4043</a> · 24/7<br>
+          <a href="mailto:adminsupport@visionsecurity.net">adminsupport@visionsecurity.net</a>
+        </p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services/fire-alarm.html">Fire Alarm</a></li>
+          <li><a href="services/security-systems.html">Security Systems</a></li>
+          <li><a href="services/video-surveillance.html">Video Surveillance</a></li>
+          <li><a href="services/access-control.html">Access Control</a></li>
+          <li><a href="services/inspections.html">Inspections</a></li>
+          <li><a href="services/monitoring.html">24/7 Monitoring</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Who We Serve</h4>
+        <ul>
+          <li><a href="for/estate-owners.html">Estate Owners</a></li>
+          <li><a href="for/homeowners.html">Local Homeowners</a></li>
+          <li><a href="for/property-managers.html">Property Managers</a></li>
+          <li><a href="for/contractors.html">General Contractors</a></li>
+          <li><a href="for/hospitality.html">Resort &amp; Hospitality</a></li>
+          <li><a href="for/multi-property.html">Multi-Property Owners</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources/compliance-calendar.html">Compliance Calendar</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://www.alarm.com/login.aspx">Alarm.com Login</a></li>
+          <li><a href="https://secure.cardknox.com/visionsecurity">Make a Payment</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>&copy; 2026 Vision Security LLC · Glenwood Springs, CO</div>
+      <div><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const nav = document.getElementById('nav');
+  if (nav) window.addEventListener('scroll', () => nav.classList.toggle('nav--scrolled', window.scrollY > 40));
+  const toggle = document.getElementById('navToggle');
+  if (toggle) toggle.addEventListener('click', () => {
+    nav.classList.toggle('nav--open');
+    toggle.setAttribute('aria-expanded', nav.classList.contains('nav--open'));
+  });
+</script></body></html>

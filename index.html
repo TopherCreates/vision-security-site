@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vision Security | Premium Life Safety in the Rocky Mountain Region</title>
+  <meta name="description" content="Vision Security saves lives and protects property across the Roaring Fork Valley. NICET-certified, same-day service, locally owned since 2004.">
+  <link rel="icon" type="image/svg+xml" href="assets/logos/VisSec_V.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/design-system.css">
+</head>
+<body>
+
+<!-- ====== NAV ====== -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="index.html" class="nav__brand" aria-label="Vision Security home">
+      <img src="assets/logos/VisSec_blue.svg" alt="Vision Security">
+    </a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links">
+      <li>
+        <a href="#">Residential<span class="nav__caret">▾</span></a>
+        <ul class="nav__dropdown">
+          <li><a href="for/estate-owners.html">Estate Owners</a></li>
+          <li><a href="for/multi-property.html">Multi-Property Owners</a></li>
+          <li><a href="for/homeowners.html">Local Homeowners</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Commercial<span class="nav__caret">▾</span></a>
+        <ul class="nav__dropdown">
+          <li><a href="for/property-managers.html">Property Managers</a></li>
+          <li><a href="for/contractors.html">General Contractors</a></li>
+          <li><a href="for/hospitality.html">Resort &amp; Hospitality</a></li>
+          <li><a href="industries/commercial-real-estate.html">Office &amp; CRE</a></li>
+          <li><a href="industries/multi-family.html">Multi-Family</a></li>
+          <li><a href="industries/construction.html">Construction &amp; New Build</a></li>
+        </ul>
+      </li>
+      <li><a href="one-vision.html">One Vision</a></li>
+      <li>
+        <a href="#">Services<span class="nav__caret">▾</span></a>
+        <ul class="nav__dropdown">
+          <li><a href="services/index.html">All Services</a></li>
+          <li><a href="services/fire-alarm.html">Fire Alarm Systems</a></li>
+          <li><a href="services/security-systems.html">Security Systems</a></li>
+          <li><a href="services/video-surveillance.html">Video Surveillance</a></li>
+          <li><a href="services/access-control.html">Access Control</a></li>
+          <li><a href="services/inspections.html">Inspections &amp; Compliance</a></li>
+          <li><a href="services/monitoring.html">24/7 Monitoring</a></li>
+          <li><a href="services/maintenance.html">Service &amp; Maintenance</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Markets<span class="nav__caret">▾</span></a>
+        <ul class="nav__dropdown">
+          <li><a href="markets/aspen-co.html">Aspen</a></li>
+          <li><a href="markets/snowmass-village-co.html">Snowmass Village</a></li>
+          <li><a href="markets/basalt-co.html">Basalt</a></li>
+          <li><a href="markets/carbondale-co.html">Carbondale</a></li>
+          <li><a href="markets/el-jebel-co.html">El Jebel</a></li>
+          <li><a href="markets/glenwood-springs-co.html">Glenwood Springs</a></li>
+          <li><a href="markets/vail-co.html">Vail</a></li>
+          <li><a href="markets/avon-co.html">Avon</a></li>
+          <li><a href="markets/edwards-co.html">Edwards</a></li>
+          <li><a href="markets/gypsum-co.html">Gypsum</a></li>
+          <li><a href="markets/eagle-co.html">Eagle</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="stories.html">Stories</a></li>
+    </ul>
+    <div style="display:flex;gap:1.25rem;align-items:center;">
+      <a href="tel:9709454043" class="nav__phone">970-945-4043</a>
+      <a href="contact.html" class="nav__cta">Request Assessment</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ====== HERO ====== -->
+<header class="hero">
+  <!-- PLACEHOLDER VIDEO: Pexels — Drone Footage of Zell am See, Austria (alpine town in valley)
+       Closest publicly-available proxy for an Aspen/Vail/Glenwood Springs flyover.
+       Replace with custom Roaring Fork Valley drone footage for production. -->
+  <video class="hero__video" autoplay muted loop playsinline
+         poster="https://images.pexels.com/videos/11999678/air-travel-austria-blue-lake-blue-sky-11999678.jpeg?auto=compress&cs=tinysrgb&w=2400">
+    <source src="https://videos.pexels.com/video-files/11999678/11999678-uhd_2730_1440_30fps.mp4" type="video/mp4">
+  </video>
+  <div class="hero__overlay"></div>
+  <div class="hero__vignette"></div>
+
+  <div class="container hero__inner">
+    <div class="hero__card">
+      <img class="hero__brand" src="assets/logos/VisSec_nobackground.svg" alt="Vision Security">
+      <div class="hero__eyebrow">21 Years Local &middot; Glenwood Springs</div>
+      <h1>We save lives.<br>We protect <em>property.</em></h1>
+      <p class="hero__sub">
+        Twenty-one years protecting Colorado's most valuable mountain residences and commercial
+        properties. NICET-certified. Same-day service. Onsite assessment with every proposal.
+      </p>
+      <div class="hero__ctas">
+        <a href="#contact" class="btn btn--primary">Request Onsite Assessment</a>
+        <a href="one-vision.html" class="btn btn--glass">Explore One Vision &rarr;</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ====== CREDENTIAL STRIP (now overlaps hero as a glass card) ====== -->
+<section class="credentials">
+  <div class="container">
+    <div class="credentials__card">
+      <div class="credentials__label">Credentials &amp; Partnerships</div>
+      <ul class="credentials__list">
+        <li><span class="credential-badge">21 Years Local</span></li>
+        <li><span class="credential-badge">NICET Certified</span></li>
+        <li><span class="credential-badge">DSC Top Dealer · Western U.S.</span></li>
+        <li><span class="credential-badge">Alarm.com Beta Partner</span></li>
+        <li><span class="credential-badge">AHJ Referred</span></li>
+        <li><span class="credential-badge">NFPA & NFSA Member</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ====== PERSONA ROUTING ====== -->
+<section class="section" id="residential">
+  <div class="container">
+    <div class="section-intro">
+      <div class="eyebrow">Find Your Path</div>
+      <h2>Built for the property you protect.</h2>
+      <p class="lead">Every system is engineered around the property, the client, and the compliance
+        environment. Choose your path.</p>
+    </div>
+
+    <div class="personas">
+      <a href="for/estate-owners.html" class="persona-card">
+        <img class="persona-card__img"
+             src="https://images.pexels.com/photos/7031408/pexels-photo-7031408.jpeg?auto=compress&cs=tinysrgb&w=1200"
+             alt="Luxury mountain estate in winter">
+        <div class="persona-card__shade"></div>
+        <div class="persona-card__body">
+          <div class="persona-card__glass">
+            <h3>Luxury Estate</h3>
+            <p>The rigor of commercial life safety, delivered with the privacy and discretion an Aspen, Snowmass, or Vail estate requires.</p>
+            <span class="persona-card__cta">Estate Services &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="for/property-managers.html" class="persona-card">
+        <img class="persona-card__img"
+             src="assets/imagery/onevision-banner.jpg"
+             alt="Roaring Fork Valley mountain town with multiple managed properties">
+        <div class="persona-card__shade"></div>
+        <div class="persona-card__body">
+          <div class="persona-card__glass">
+            <h3>Property Manager</h3>
+            <p>One vendor across every property. One invoice. Full compliance coverage. Zero vendor coordination.</p>
+            <span class="persona-card__cta">See How One Vision Works &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="for/contractors.html" class="persona-card">
+        <img class="persona-card__img"
+             src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80"
+             alt="Construction site">
+        <div class="persona-card__shade"></div>
+        <div class="persona-card__body">
+          <div class="persona-card__glass">
+            <h3>General Contractor</h3>
+            <p>Every system designed to AHJ specifications. Inspections pass the first time. No permit delays.</p>
+            <span class="persona-card__cta">Builder Services &rarr;</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="for/homeowners.html" class="persona-card">
+        <img class="persona-card__img"
+             src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1200&q=80"
+             alt="Mountain home in the valley">
+        <div class="persona-card__shade"></div>
+        <div class="persona-card__body">
+          <div class="persona-card__glass">
+            <h3>Local Homeowner</h3>
+            <p>We answer the phone. We show up when promised. We follow up two weeks after every service call.</p>
+            <span class="persona-card__cta">Residential Plans &rarr;</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== ONE VISION TEASER ====== -->
+<section class="section section--tinted" id="commercial">
+  <div class="container">
+    <div class="onevision">
+      <div>
+        <div class="eyebrow" style="color:var(--sky-blue);">Flagship Program</div>
+        <h2>One Vision Program.<br>One vendor. One visit. One invoice.</h2>
+        <p>Five to ten vendors. Five to ten schedules. Five to ten chances to miss an inspection
+          deadline. The One Vision Program consolidates every life safety obligation under a single
+          coordinated service. No competitor in the market offers a comparable program.</p>
+        <ul class="onevision__list">
+          <li>Fire alarm inspection</li>
+          <li>Security inspection</li>
+          <li>Sprinkler inspection</li>
+          <li>Backflow testing</li>
+          <li>Extinguisher service</li>
+          <li>Exit lighting compliance</li>
+        </ul>
+        <a href="one-vision.html" class="btn btn--primary">Explore One Vision Program</a>
+      </div>
+      <div class="onevision__brand">
+        <img src="assets/logos/VisSec_white.svg" alt="Vision Security">
+        <p class="onevision__brand-tagline">Saving lives.&nbsp; Protecting property.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== TECHNOLOGY SHOWCASE (new) ====== -->
+<section class="section section--midnight" id="technology">
+  <div class="container">
+    <div class="section-intro">
+      <div class="eyebrow">Technology Partners</div>
+      <h2>The equipment that protects what matters.</h2>
+      <p class="lead" style="color:rgba(255,255,255,0.72);">
+        Vision Security installs only premium, professionally-engineered systems from manufacturers
+        we have vetted through two decades of field work. DSC, Potter, Alarm.com, Eagle Eye, Qolsys.
+        Every component is selected for the property it serves.
+      </p>
+    </div>
+
+    <div class="tech-showcase">
+      <article class="tech-card">
+        <div class="tech-card__media">
+          <img src="assets/imagery/Installing_Pull-Station.png"
+               alt="Vision Security technician demonstrating a Potter pull station in a commercial building">
+        </div>
+        <div class="tech-card__body">
+          <div class="tech-card__brand">Potter</div>
+          <h3>Commercial Fire Systems</h3>
+          <p>UL listed pull stations, addressable smoke and heat detection, and audible-visual notification engineered to NFPA 72.</p>
+        </div>
+      </article>
+
+      <article class="tech-card">
+        <div class="tech-card__media">
+          <img src="assets/imagery/Installing_DSC_Keypad.png"
+               alt="Vision Security technician installing a DSC security keypad">
+        </div>
+        <div class="tech-card__body">
+          <div class="tech-card__brand">DSC · Top Dealer Western U.S.</div>
+          <h3>Life Safety, Intrusion, and Environmental</h3>
+          <p>Hardwired and recessed contact, motion, glass-break, and environmental sensors engineered to the property's risk profile.</p>
+        </div>
+      </article>
+
+      <article class="tech-card">
+        <div class="tech-card__media">
+          <img src="assets/imagery/Installing_Smoke_Detector.png"
+               alt="Vision Security technician installing a Qolsys wireless smoke detector"
+               style="object-position: top;">
+        </div>
+        <div class="tech-card__body">
+          <div class="tech-card__brand">Qolsys</div>
+          <h3>Wireless Life Safety, Intrusion, and Environmental</h3>
+          <p>IQ Panel touchscreen control with dual SRF radio, encrypted wireless sensors, and full smart-home integration.</p>
+        </div>
+      </article>
+
+      <article class="tech-card">
+        <div class="tech-card__media">
+          <img src="assets/imagery/Showing_Alarm_App.png"
+               alt="Customer viewing the Alarm.com live video feed on a smartphone">
+        </div>
+        <div class="tech-card__body">
+          <div class="tech-card__brand">Alarm.com · Beta Partner</div>
+          <h3>Intelligent Monitoring Platform</h3>
+          <p>Watch the live feed from anywhere. Smart-home and commercial integration with remote arm, disarm, and video review.</p>
+        </div>
+      </article>
+
+      <article class="tech-card">
+        <div class="tech-card__media">
+          <img src="assets/imagery/Showing_Camera.png"
+               alt="Eagle Eye Networks CCTV camera installed inside a commercial building">
+        </div>
+        <div class="tech-card__body">
+          <div class="tech-card__brand">Eagle Eye Networks</div>
+          <h3>CCTV Systems</h3>
+          <p>Commercial-grade IP cameras, true-cloud recording, AI-driven analytics, and multi-site access from any device.</p>
+        </div>
+      </article>
+
+      <article class="tech-card">
+        <div class="tech-card__media">
+          <img src="assets/imagery/Showing_Badge_Access.png"
+               alt="Vision Security technician installing a badge reader at a commercial entrance">
+        </div>
+        <div class="tech-card__body">
+          <div class="tech-card__brand">Multi-Manufacturer</div>
+          <h3>Access Control Systems</h3>
+          <p>Badge, mobile credential, and biometric readers engineered for residential estates and commercial portfolios.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====== SERVICES (on light) ====== -->
+<section class="section section--tinted">
+  <div class="container">
+    <div class="section-intro">
+      <div class="eyebrow">Capabilities</div>
+      <h2>Designed, installed, monitored, and inspected by the same team.</h2>
+      <p class="lead">Same-day scheduling. Onsite assessment with every proposal. Daily trouble log
+        review so we catch issues before our clients do. Two-week post-service follow-up. Standard
+        practice.</p>
+    </div>
+
+    <div class="capabilities-grid">
+
+      <a href="services/fire-alarm.html" class="capability-card">
+        <div class="capability-card__media capability-card__media--graphic">
+          <svg class="cap-illo" viewBox="0 0 600 375" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <radialGradient id="fa-glow" cx="50%" cy="62%" r="40%">
+      <stop offset="0%" stop-color="#F2A93B" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#F2A93B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fa-flame" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#FFE7A0"/>
+      <stop offset="55%" stop-color="#F2A93B"/>
+      <stop offset="100%" stop-color="#C24B27"/>
+    </linearGradient>
+  </defs>
+  <circle cx="300" cy="220" r="170" fill="url(#fa-glow)"/>
+  <circle class="cap-illo__pulse" cx="300" cy="220" r="100" fill="none" stroke="#FFE7A0" stroke-width="1.5"/>
+  <circle class="cap-illo__pulse" cx="300" cy="220" r="100" fill="none" stroke="#FFE7A0" stroke-width="1.5"/>
+  <circle class="cap-illo__pulse" cx="300" cy="220" r="100" fill="none" stroke="#FFE7A0" stroke-width="1.5"/>
+  <g transform="translate(300 230)"><g class="cap-illo__focal">
+    <path d="M -42 80 C -85 50, -75 -5, -32 -45 C -20 -25, -10 -10, -22 10 C -10 -5, 4 -22, 8 -50 C 36 -32, 58 -2, 56 36 C 54 70, 28 90, 0 92 C -22 92, -42 86, -42 80 Z" fill="url(#fa-flame)" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.35))"/>
+    <path d="M -18 60 C -32 42, -28 20, -8 0 C -2 14, 8 22, 4 38 C 18 24, 24 8, 26 -8 C 40 6, 44 26, 38 46 C 30 64, 10 72, -6 70 C -14 70, -18 64, -18 60 Z" fill="#FFF6D8" opacity="0.85"/>
+  </g></g>
+  <text x="40" y="48" fill="rgba(255,255,255,0.55)" font-family="Inter, sans-serif" font-size="11" font-weight="700" letter-spacing="0.18em">NFPA 72</text>
+  <text x="40" y="64" fill="rgba(214,228,240,0.45)" font-family="Inter, sans-serif" font-size="9" letter-spacing="0.12em">UL LISTED · POTTER</text>
+</svg>
+          <span class="capability-card__tag capability-card__tag--fire">Fire Alarm</span>
+        </div>
+        <div class="capability-card__body">
+          <h3>Fire Alarm Systems</h3>
+          <p>UL listed commercial wireless and hardwired systems engineered to NFPA 72 and the property's AHJ.</p>
+          <span class="capability-card__cta">Explore Fire Alarm &rarr;</span>
+        </div>
+      </a>
+
+      <a href="services/security-systems.html" class="capability-card">
+        <div class="capability-card__media capability-card__media--graphic">
+          <svg class="cap-illo" viewBox="0 0 600 375" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="se-shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D6E4F0" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#5A8FC4" stop-opacity="0.8"/>
+    </linearGradient>
+    <radialGradient id="se-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D6E4F0" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#D6E4F0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="300" cy="195" r="160" fill="url(#se-glow)"/>
+  <g stroke="rgba(214,228,240,0.10)" stroke-width="1" fill="none">
+    <line x1="100" y1="85" x2="500" y2="85"/>
+    <line x1="100" y1="305" x2="500" y2="305"/>
+  </g>
+  <g transform="translate(300 195)"><g class="cap-illo__focal">
+    <path d="M 0 -110 L 95 -75 L 95 30 C 95 88, 50 120, 0 132 C -50 120, -95 88, -95 30 L -95 -75 Z" fill="url(#se-shield)" stroke="#FFFFFF" stroke-width="2.5" stroke-opacity="0.85" filter="drop-shadow(0 12px 24px rgba(0,0,0,0.4))"/>
+    <path d="M 0 -110 L 95 -75 L 95 30 C 95 88, 50 120, 0 132 C -50 120, -95 88, -95 30 L -95 -75 Z" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="1" transform="scale(0.86)"/>
+    <path d="M -38 -22 L 0 28 L 38 -22 L 24 -22 L 0 8 L -24 -22 Z" fill="#1B4F8A"/>
+    <circle cx="0" cy="-50" r="6" fill="#FFFFFF" opacity="0.92"/>
+  </g></g>
+  <text x="40" y="48" fill="rgba(255,255,255,0.55)" font-family="Inter, sans-serif" font-size="11" font-weight="700" letter-spacing="0.18em">DSC · QOLSYS</text>
+  <text x="40" y="64" fill="rgba(214,228,240,0.45)" font-family="Inter, sans-serif" font-size="9" letter-spacing="0.12em">TOP DEALER · WESTERN U.S.</text>
+</svg>
+          <span class="capability-card__tag capability-card__tag--security">Security</span>
+        </div>
+        <div class="capability-card__body">
+          <h3>Security Systems</h3>
+          <p>Custom DSC intrusion systems and Qolsys IQ Panels. Hardwired and wireless sensors, monitored 24/7.</p>
+          <span class="capability-card__cta">Explore Security &rarr;</span>
+        </div>
+      </a>
+
+      <a href="services/video-surveillance.html" class="capability-card">
+        <div class="capability-card__media capability-card__media--graphic">
+          <svg class="cap-illo" viewBox="0 0 600 375" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <radialGradient id="vs-lens" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#2A6FB5"/>
+      <stop offset="100%" stop-color="#0E2742"/>
+    </radialGradient>
+    <linearGradient id="vs-cone" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#D6E4F0" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#D6E4F0" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M 300 195 L 540 80 L 540 310 Z" fill="url(#vs-cone)" opacity="0.7"/>
+  <g transform="translate(300 195)"><g class="cap-illo__focal">
+    <circle cx="0" cy="0" r="115" fill="#0D1117" stroke="rgba(214,228,240,0.35)" stroke-width="2"/>
+    <circle cx="0" cy="0" r="90" fill="url(#vs-lens)" stroke="rgba(214,228,240,0.5)" stroke-width="1.2"/>
+    <circle cx="0" cy="0" r="55" fill="none" stroke="rgba(255,255,255,0.45)" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="28" fill="#0D1117" stroke="rgba(214,228,240,0.5)" stroke-width="1"/>
+    <circle cx="0" cy="0" r="12" fill="#1B4F8A"/>
+    <circle cx="-7" cy="-7" r="6" fill="#D6E4F0" opacity="0.9"/>
+  </g></g>
+  <circle cx="490" cy="105" r="6" fill="#C24B27"/>
+  <text x="500" y="110" fill="rgba(214,228,240,0.7)" font-family="Inter, sans-serif" font-size="11" font-weight="700" letter-spacing="0.16em">REC</text>
+  <g stroke="rgba(214,228,240,0.06)" stroke-width="1">
+    <line x1="80" y1="40" x2="80" y2="335"/>
+    <line x1="120" y1="40" x2="120" y2="335"/>
+    <line x1="160" y1="40" x2="160" y2="335"/>
+  </g>
+  <text x="40" y="48" fill="rgba(255,255,255,0.55)" font-family="Inter, sans-serif" font-size="11" font-weight="700" letter-spacing="0.18em">EAGLE EYE NETWORKS</text>
+  <text x="40" y="64" fill="rgba(214,228,240,0.45)" font-family="Inter, sans-serif" font-size="9" letter-spacing="0.12em">AI ANALYTICS · CLOUD VMS</text>
+</svg>
+          <span class="capability-card__tag capability-card__tag--video">Video</span>
+        </div>
+        <div class="capability-card__body">
+          <h3>Video Surveillance</h3>
+          <p>AI-driven analytics through our Alarm.com beta partnership and Eagle Eye Networks platforms.</p>
+          <span class="capability-card__cta">Explore Video &rarr;</span>
+        </div>
+      </a>
+
+      <a href="services/access-control.html" class="capability-card">
+        <div class="capability-card__media capability-card__media--graphic">
+          <svg class="cap-illo" viewBox="0 0 600 375" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="ac-card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#D6E4F0" stop-opacity="0.85"/>
+    </linearGradient>
+    <radialGradient id="ac-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE7A0" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFE7A0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g transform="translate(300 195)"><g class="cap-illo__focal">
+    <rect x="-130" y="-78" width="200" height="130" rx="12" fill="url(#ac-card)" stroke="rgba(255,255,255,0.65)" stroke-width="2" filter="drop-shadow(0 12px 28px rgba(0,0,0,0.4))" transform="rotate(-8)"/>
+    <g transform="rotate(-8)">
+      <rect x="-110" y="-58" width="34" height="26" rx="3" fill="#C9A24A" opacity="0.92"/>
+      <line x1="-110" y1="-45" x2="-76" y2="-45" stroke="#8B6F2F" stroke-width="0.5"/>
+      <line x1="-93" y1="-58" x2="-93" y2="-32" stroke="#8B6F2F" stroke-width="0.5"/>
+      <rect x="-65" y="-58" width="100" height="3" rx="1.5" fill="#1B4F8A" opacity="0.45"/>
+      <rect x="-65" y="-50" width="80" height="2" rx="1" fill="#1B4F8A" opacity="0.3"/>
+      <text x="-110" y="38" fill="#1B4F8A" font-family="Inter, sans-serif" font-size="10" font-weight="700" letter-spacing="0.12em">VISION SEC</text>
+    </g>
+    <g transform="translate(120 0)">
+      <rect x="0" y="-75" width="38" height="150" rx="8" fill="rgba(13,17,23,0.85)" stroke="rgba(214,228,240,0.45)" stroke-width="1.5"/>
+      <circle cx="19" cy="0" r="20" fill="url(#ac-glow)"/>
+      <circle cx="19" cy="0" r="11" fill="none" stroke="#FFE7A0" stroke-width="1.5"/>
+      <circle cx="19" cy="0" r="5" fill="#FFE7A0"/>
+    </g>
+  </g></g>
+  <text x="40" y="48" fill="rgba(255,255,255,0.55)" font-family="Inter, sans-serif" font-size="11" font-weight="700" letter-spacing="0.18em">CARD · MOBILE · BIOMETRIC</text>
+  <text x="40" y="64" fill="rgba(214,228,240,0.45)" font-family="Inter, sans-serif" font-size="9" letter-spacing="0.12em">MULTI-MANUFACTURER</text>
+</svg>
+          <span class="capability-card__tag capability-card__tag--access">Access</span>
+        </div>
+        <div class="capability-card__body">
+          <h3>Access Control</h3>
+          <p>Card, mobile credential, and biometric readers for residential estates and commercial portfolios.</p>
+          <span class="capability-card__cta">Explore Access &rarr;</span>
+        </div>
+      </a>
+
+      <a href="services/inspections.html" class="capability-card">
+        <div class="capability-card__media capability-card__media--graphic">
+          <svg class="cap-illo" viewBox="0 0 600 375" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="in-clip" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#D6E4F0" stop-opacity="0.85"/>
+    </linearGradient>
+  </defs>
+  <g opacity="0.10" stroke="rgba(214,228,240,1)" stroke-width="0.8" fill="none">
+    <g transform="translate(95 80)">
+      <rect x="0" y="0" width="44" height="44" rx="2"/>
+      <rect x="50" y="0" width="44" height="44" rx="2"/>
+      <rect x="100" y="0" width="44" height="44" rx="2"/>
+      <rect x="0" y="50" width="44" height="44" rx="2"/>
+      <rect x="50" y="50" width="44" height="44" rx="2"/>
+      <rect x="100" y="50" width="44" height="44" rx="2"/>
+      <rect x="0" y="100" width="44" height="44" rx="2"/>
+      <rect x="50" y="100" width="44" height="44" rx="2"/>
+      <rect x="100" y="100" width="44" height="44" rx="2"/>
+    </g>
+  </g>
+  <g transform="translate(300 195)"><g class="cap-illo__focal">
+    <rect x="-95" y="-118" width="190" height="240" rx="10" fill="url(#in-clip)" stroke="rgba(255,255,255,0.7)" stroke-width="2" filter="drop-shadow(0 14px 28px rgba(0,0,0,0.35))"/>
+    <rect x="-30" y="-128" width="60" height="22" rx="4" fill="#1B4F8A"/>
+    <circle cx="0" cy="-117" r="4" fill="#FFFFFF"/>
+    <g transform="translate(-72 -80)">
+      <circle cx="0" cy="0" r="9" fill="#2F8F5C"/>
+      <path d="M -4 0 L -1 4 L 5 -3" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="20" y="-3" width="100" height="6" rx="3" fill="#1B4F8A" opacity="0.4"/>
+    </g>
+    <g transform="translate(-72 -40)">
+      <circle cx="0" cy="0" r="9" fill="#2F8F5C"/>
+      <path d="M -4 0 L -1 4 L 5 -3" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="20" y="-3" width="110" height="6" rx="3" fill="#1B4F8A" opacity="0.4"/>
+    </g>
+    <g transform="translate(-72 0)">
+      <circle cx="0" cy="0" r="9" fill="#2F8F5C"/>
+      <path d="M -4 0 L -1 4 L 5 -3" stroke="#FFFFFF" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="20" y="-3" width="90" height="6" rx="3" fill="#1B4F8A" opacity="0.4"/>
+    </g>
+    <g transform="translate(-72 40)">
+      <circle cx="0" cy="0" r="9" fill="rgba(27,79,138,0.12)" stroke="#1B4F8A" stroke-width="1.5"/>
+      <rect x="20" y="-3" width="105" height="6" rx="3" fill="#1B4F8A" opacity="0.25"/>
+    </g>
+    <g transform="translate(-72 80)">
+      <circle cx="0" cy="0" r="9" fill="rgba(27,79,138,0.12)" stroke="#1B4F8A" stroke-width="1.5"/>
+      <rect x="20" y="-3" width="80" height="6" rx="3" fill="#1B4F8A" opacity="0.25"/>
+    </g>
+  </g></g>
+  <text x="40" y="48" fill="rgba(255,255,255,0.55)" font-family="Inter, sans-serif" font-size="11" font-weight="700" letter-spacing="0.18em">NFPA 25 · 72 · 10 · 101</text>
+  <text x="40" y="64" fill="rgba(214,228,240,0.45)" font-family="Inter, sans-serif" font-size="9" letter-spacing="0.12em">ONE VISION PROGRAM</text>
+</svg>
+          <span class="capability-card__tag capability-card__tag--inspect">Inspections</span>
+        </div>
+        <div class="capability-card__body">
+          <h3>Inspections &amp; Compliance</h3>
+          <p>NFPA-compliant annual inspections coordinated under the One Vision Program. Tablet-based reporting submitted directly to your AHJ.</p>
+          <span class="capability-card__cta">Explore Inspections &rarr;</span>
+        </div>
+      </a>
+
+      <a href="services/monitoring.html" class="capability-card">
+        <div class="capability-card__media capability-card__media--graphic">
+          <svg class="cap-illo" viewBox="0 0 600 375" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="sm-phone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1A1F26"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="sm-screen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1B4F8A"/>
+      <stop offset="100%" stop-color="#143A66"/>
+    </linearGradient>
+    <radialGradient id="sm-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D6E4F0" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#D6E4F0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle class="cap-illo__pulse" cx="300" cy="195" r="100" fill="none" stroke="rgba(214,228,240,0.5)" stroke-width="1.2"/>
+  <circle class="cap-illo__pulse" cx="300" cy="195" r="100" fill="none" stroke="rgba(214,228,240,0.5)" stroke-width="1.2"/>
+  <circle class="cap-illo__pulse" cx="300" cy="195" r="100" fill="none" stroke="rgba(214,228,240,0.5)" stroke-width="1.2"/>
+  <g stroke="rgba(214,228,240,0.18)" stroke-width="1" fill="none">
+    <line x1="300" y1="195" x2="120" y2="90"/>
+    <line x1="300" y1="195" x2="480" y2="90"/>
+    <line x1="300" y1="195" x2="120" y2="300"/>
+    <line x1="300" y1="195" x2="480" y2="300"/>
+  </g>
+  <g fill="#D6E4F0">
+    <circle cx="120" cy="90" r="6" opacity="0.75"/>
+    <circle cx="480" cy="90" r="6" opacity="0.75"/>
+    <circle cx="120" cy="300" r="6" opacity="0.75"/>
+    <circle cx="480" cy="300" r="6" opacity="0.75"/>
+  </g>
+  <text x="108" y="78" fill="rgba(214,228,240,0.55)" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" letter-spacing="0.12em">FIRE</text>
+  <text x="466" y="78" fill="rgba(214,228,240,0.55)" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" letter-spacing="0.12em">VIDEO</text>
+  <text x="103" y="320" fill="rgba(214,228,240,0.55)" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" letter-spacing="0.12em">SECURITY</text>
+  <text x="463" y="320" fill="rgba(214,228,240,0.55)" font-family="Inter, sans-serif" font-size="8.5" font-weight="600" letter-spacing="0.12em">ACCESS</text>
+  <g transform="translate(300 195)"><g class="cap-illo__focal">
+    <circle cx="0" cy="0" r="105" fill="url(#sm-glow)"/>
+    <rect x="-52" y="-100" width="104" height="200" rx="14" fill="url(#sm-phone)" stroke="rgba(214,228,240,0.6)" stroke-width="1.5" filter="drop-shadow(0 14px 28px rgba(0,0,0,0.5))"/>
+    <rect x="-44" y="-90" width="88" height="180" rx="6" fill="url(#sm-screen)"/>
+    <circle cx="0" cy="-94" r="3" fill="#0D1117"/>
+    <rect x="-32" y="-72" width="64" height="3" rx="1.5" fill="rgba(214,228,240,0.85)"/>
+    <rect x="-32" y="-64" width="40" height="2" rx="1" fill="rgba(214,228,240,0.55)"/>
+    <rect x="-32" y="-46" width="64" height="32" rx="4" fill="rgba(214,228,240,0.10)" stroke="rgba(214,228,240,0.35)" stroke-width="0.8"/>
+    <circle cx="-14" cy="-30" r="7" fill="none" stroke="#2F8F5C" stroke-width="1.4"/>
+    <circle cx="-14" cy="-30" r="2.5" fill="#2F8F5C"/>
+    <rect x="0" y="-34" width="28" height="3" rx="1.5" fill="rgba(214,228,240,0.7)"/>
+    <rect x="0" y="-26" width="20" height="2" rx="1" fill="rgba(214,228,240,0.45)"/>
+    <rect x="-32" y="-4" width="64" height="32" rx="4" fill="rgba(214,228,240,0.10)" stroke="rgba(214,228,240,0.35)" stroke-width="0.8"/>
+    <circle cx="-14" cy="12" r="7" fill="none" stroke="#D6E4F0" stroke-width="1.4"/>
+    <rect x="-17" y="9" width="6" height="6" fill="#D6E4F0"/>
+    <rect x="0" y="8" width="28" height="3" rx="1.5" fill="rgba(214,228,240,0.7)"/>
+    <rect x="0" y="16" width="22" height="2" rx="1" fill="rgba(214,228,240,0.45)"/>
+    <rect x="-32" y="38" width="64" height="32" rx="4" fill="rgba(214,228,240,0.10)" stroke="rgba(214,228,240,0.35)" stroke-width="0.8"/>
+    <circle cx="-14" cy="54" r="7" fill="none" stroke="#C24B27" stroke-width="1.4"/>
+    <path d="M -16 51 L -12 51 L -12 56 L -16 56 Z M -15 56 L -13 60" stroke="#C24B27" stroke-width="1.2" fill="none"/>
+    <rect x="0" y="50" width="28" height="3" rx="1.5" fill="rgba(214,228,240,0.7)"/>
+    <rect x="0" y="58" width="24" height="2" rx="1" fill="rgba(214,228,240,0.45)"/>
+    <rect x="-12" y="84" width="24" height="2" rx="1" fill="rgba(214,228,240,0.6)"/>
+  </g></g>
+  <text x="40" y="48" fill="rgba(255,255,255,0.55)" font-family="Inter, sans-serif" font-size="11" font-weight="700" letter-spacing="0.18em">ALARM.COM PLATFORM</text>
+  <text x="40" y="64" fill="rgba(214,228,240,0.45)" font-family="Inter, sans-serif" font-size="9" letter-spacing="0.12em">BETA PARTNER · 24/7</text>
+</svg>
+          <span class="capability-card__tag capability-card__tag--smart">Smart Integration</span>
+        </div>
+        <div class="capability-card__body">
+          <h3>Smart Integration &amp; 24/7 Monitoring</h3>
+          <p>The Alarm.com mobile platform on every install. Arm, disarm, watch video, and review event history from anywhere. Daily trouble log review by our team.</p>
+          <span class="capability-card__cta">Explore Monitoring &rarr;</span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ====== ABOUT / 21 YEARS ====== -->
+<section class="section section--dark" id="about">
+  <div class="container">
+    <div class="split">
+      <div>
+        <div class="eyebrow">Local Since 2004</div>
+        <h2>The depth of a national provider.<br>The accountability of a local one.</h2>
+        <p class="lead" style="color:rgba(255,255,255,0.78);">Founded by Jennifer and Ed Johnson in
+          2004. Today Vision Security protects more than 1,300 active accounts across Aspen, Vail, and
+          Glenwood Springs with a fully NICET-certified team, active referrals from local fire marshals,
+          and a service philosophy built around answering every call, walking every property, and
+          reviewing trouble logs daily so issues are caught before clients ever know they happened.</p>
+        <p class="lead" style="color:rgba(255,255,255,0.78);">When the national operators acquired our
+          competitors, Vision Security stayed local. Same owners. Same team. Same accountability.</p>
+
+        <div class="proofpoints">
+          <div class="proofpoint proofpoint--glass">
+            <div class="proofpoint__num">21</div>
+            <div class="proofpoint__label">Years in the Valley</div>
+          </div>
+          <div class="proofpoint proofpoint--glass">
+            <div class="proofpoint__num">1,300+</div>
+            <div class="proofpoint__label">Active Accounts</div>
+          </div>
+          <div class="proofpoint proofpoint--glass">
+            <div class="proofpoint__num">100%</div>
+            <div class="proofpoint__label">NICET-Certified</div>
+          </div>
+        </div>
+      </div>
+      <div class="split__media">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1400&q=85"
+             alt="Maroon Bells in the Colorado Rockies, near Aspen">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ====== STORIES FROM THE VALLEY (random featured video) ====== -->
+<section class="section">
+  <div class="container">
+    <div class="featured-story">
+      <div class="featured-story__copy">
+        <div class="eyebrow">Stories from the Valley</div>
+        <h2>Real people. Real properties. Real stories.</h2>
+        <p>For twenty-one years our work has been measured one home, one building, one phone call at a time. These are the people we protect, telling their stories in their own voice.</p>
+        <a href="stories.html" class="btn btn--solid">See All Stories &rarr;</a>
+      </div>
+      <a href="stories.html" class="video-card video-card--featured" id="featuredStoryCard" aria-label="Play featured story">
+        <div class="video-card__poster" id="featuredStoryPoster"></div>
+        <div class="video-card__gradient"></div>
+        <div class="video-card__badge video-card__badge--demo">Demo</div>
+        <div class="video-card__play"></div>
+        <div class="video-card__body">
+          <p class="video-card__quote" id="featuredStoryQuote">"—"</p>
+          <div class="video-card__person">
+            <div>
+              <div class="video-card__person-name" id="featuredStoryName">—</div>
+              <div class="video-card__person-role" id="featuredStoryRole">—</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  const STORIES = [{"id": "marcus-whitfield", "name": "Marcus Whitfield", "role": "Property Manager \u00b7 Aspen, CO", "quote": "Their NICET team caught issues two other vendors missed. Back in compliance before AHJ re-inspection.", "gradient": "linear-gradient(135deg, #143A66 0%, #1B4F8A 60%, #0E2742 100%)"}, {"id": "sarah-chen", "name": "Sarah Chen", "role": "Homeowner \u00b7 Carbondale, CO", "quote": "They answer the phone every time. Two-week follow-up calls. I've had alarm companies for 20 years and never seen this level of service.", "gradient": "linear-gradient(135deg, #0E2742 0%, #1B4F8A 50%, #2A6FB5 100%)"}, {"id": "james-halloran", "name": "James Halloran", "role": "General Contractor \u00b7 Halloran Builders", "quote": "Inspections pass the first time. Every time. No permit delays. That's worth more than any line item on a bid.", "gradient": "linear-gradient(135deg, #1A1F26 0%, #143A66 60%, #1B4F8A 100%)"}, {"id": "linda-vasquez", "name": "Linda Vasquez", "role": "Estate Owner \u00b7 Snowmass Village", "quote": "They handle our estate the way a private bank handles your money. Quiet, professional, never an intrusion.", "gradient": "linear-gradient(135deg, #143A66 0%, #2A6FB5 60%, #4A8FD0 100%)"}, {"id": "david-riordan", "name": "David Riordan", "role": "GM \u00b7 Vail Mountain Lodge", "quote": "Zero false alarms in 18 months. That's the difference between a five-star review and a one-star complaint.", "gradient": "linear-gradient(135deg, #0E2742 0%, #1A1F26 50%, #143A66 100%)"}, {"id": "mike-carter", "name": "Mike Carter", "role": "Multi-Property Owner \u00b7 Aspen & Vail", "quote": "Every home on one app. One specialist. One invoice. I should have switched to Vision Security five years ago.", "gradient": "linear-gradient(135deg, #1B4F8A 0%, #143A66 60%, #0E2742 100%)"}];
+  const KEY = 'visec_featured_story_id';
+  let chosen;
+  try {
+    const cachedId = sessionStorage.getItem(KEY);
+    chosen = cachedId ? STORIES.find(s => s.id === cachedId) : null;
+  } catch (e) {}
+  if (!chosen) {
+    chosen = STORIES[Math.floor(Math.random() * STORIES.length)];
+    try { sessionStorage.setItem(KEY, chosen.id); } catch (e) {}
+  }
+  document.getElementById('featuredStoryPoster').style.background = chosen.gradient;
+  document.getElementById('featuredStoryQuote').textContent = '"' + chosen.quote + '"';
+  document.getElementById('featuredStoryName').textContent = chosen.name;
+  document.getElementById('featuredStoryRole').textContent = chosen.role;
+  document.getElementById('featuredStoryCard').href = 'stories.html#' + chosen.id;
+})();
+</script>
+
+
+<!-- ====== GOOGLE REVIEWS MARQUEE (live-pull in production) ====== -->
+<section class="section" style="padding-top:3rem;padding-bottom:5rem;">
+  <div class="container">
+    <div class="section-intro" style="text-align:center;max-width:680px;margin:0 auto;">
+      <div class="eyebrow" style="justify-content:center;">★★★★★ &nbsp;Verified on Google</div>
+      <h2 style="font-size:clamp(1.5rem,2.4vw,2rem);">And what people say in their own words.</h2>
+      <p class="lead" style="font-size:1.02rem;margin:0 auto;">Live, public reviews from the Google Business Profile. Refreshes weekly in production via the Places API. No editing, no paraphrasing.</p>
+    </div>
+  </div>
+
+  <div class="proof-marquee" aria-label="Verified Google reviews carousel">
+    <div class="proof-track" id="proofTrack">
+      <article class="proof__card">
+        <div class="proof__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof__quote">"Chris and Chris did a great job on the camera install. These guys are very polite, friendly and professional. They clean up as they go and communicate throughout the install process. They definitely understand the process and requirements to work in high caliber homes."</p>
+        <div class="proof__author">
+          <div class="proof__avatar"></div>
+          <div>
+            <div class="proof__name">Daniel Ellis</div>
+            <div class="proof__role">Verified Google Review</div>
+          </div>
+        </div>
+      </article>
+
+            <article class="proof__card">
+        <div class="proof__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof__quote">"The staff at Vision Security is extremely helpful and professional. I am with the company for 23 years and I never had any problems. Highly recommend Vision Security for all your security needs. Ashley is absolutely amazing."</p>
+        <div class="proof__author">
+          <div class="proof__avatar"></div>
+          <div>
+            <div class="proof__name">Tibor Stern</div>
+            <div class="proof__role">23-Year Client · Verified Google Review</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proof__card">
+        <div class="proof__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof__quote">"Ashley from Vision Security provided technical help over the phone during business hours and solved my issue, which prevented an on-site service call. This also happened several years ago, during after-hours, which prevented a sleepless night. Vision Security provided prompt help when needed."</p>
+        <div class="proof__author">
+          <div class="proof__avatar"></div>
+          <div>
+            <div class="proof__name">Dale Merrill</div>
+            <div class="proof__role">Verified Google Review</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proof__card">
+        <div class="proof__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof__quote">"Aaron and Karl are great to work with, as well as the rest of the office and site team. Communication is constant and their knowledge is proven in their work."</p>
+        <div class="proof__author">
+          <div class="proof__avatar"></div>
+          <div>
+            <div class="proof__name">Matthew K.</div>
+            <div class="proof__role">Verified Google Review</div>
+          </div>
+        </div>
+      </article>
+
+
+      <!-- Duplicate set for seamless loop (aria-hidden) -->
+      <article class="proof__card" aria-hidden="true">
+        <div class="proof__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof__quote">"Chris and Chris did a great job on the camera install. These guys are very polite, friendly and professional. They clean up as they go and communicate throughout the install process. They definitely understand the process and requirements to work in high caliber homes."</p>
+        <div class="proof__author">
+          <div class="proof__avatar"></div>
+          <div>
+            <div class="proof__name">Daniel Ellis</div>
+            <div class="proof__role">Verified Google Review</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proof__card" aria-hidden="true">
+        <div class="proof__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof__quote">"The staff at Vision Security is extremely helpful and professional. I am with the company for 23 years and I never had any problems. Highly recommend Vision Security for all your security needs. Ashley is absolutely amazing."</p>
+        <div class="proof__author">
+          <div class="proof__avatar"></div>
+          <div>
+            <div class="proof__name">Tibor Stern</div>
+            <div class="proof__role">23-Year Client · Verified Google Review</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proof__card" aria-hidden="true">
+        <div class="proof__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof__quote">"Ashley from Vision Security provided technical help over the phone during business hours and solved my issue, which prevented an on-site service call. This also happened several years ago, during after-hours, which prevented a sleepless night. Vision Security provided prompt help when needed."</p>
+        <div class="proof__author">
+          <div class="proof__avatar"></div>
+          <div>
+            <div class="proof__name">Dale Merrill</div>
+            <div class="proof__role">Verified Google Review</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proof__card" aria-hidden="true">
+        <div class="proof__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="proof__quote">"Aaron and Karl are great to work with, as well as the rest of the office and site team. Communication is constant and their knowledge is proven in their work."</p>
+        <div class="proof__author">
+          <div class="proof__avatar"></div>
+          <div>
+            <div class="proof__name">Matthew K.</div>
+            <div class="proof__role">Verified Google Review</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="container" style="text-align:center;margin-top:1.5rem;">
+    <a href="https://www.google.com/search?q=vision+security+glenwood+springs" target="_blank" rel="noopener" class="btn btn--outline" style="font-size:0.86rem;padding:0.55rem 1.25rem;">Read more on Google &rarr;</a>
+  </div>
+</section>
+
+<script>
+  // Marquee center-focus tracker
+  (function initProofMarquee() {
+    const marquee = document.querySelector('.proof-marquee');
+    const track = document.getElementById('proofTrack');
+    if (!marquee || !track) return;
+    const cards = track.querySelectorAll('.proof__card');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function updateFeatured() {
+      const rect = marquee.getBoundingClientRect();
+      if (rect.bottom < 0 || rect.top > window.innerHeight) {
+        requestAnimationFrame(updateFeatured);
+        return;
+      }
+      const centerX = rect.left + rect.width / 2;
+      let closest = null;
+      let closestDist = Infinity;
+      cards.forEach(card => {
+        const cr = card.getBoundingClientRect();
+        const dist = Math.abs((cr.left + cr.width / 2) - centerX);
+        if (dist < closestDist) { closestDist = dist; closest = card; }
+      });
+      cards.forEach(c => c.classList.toggle('is-featured', c === closest));
+      requestAnimationFrame(updateFeatured);
+    }
+
+    if (prefersReducedMotion) {
+      if (cards[1]) cards[1].classList.add('is-featured');
+    } else {
+      requestAnimationFrame(updateFeatured);
+    }
+  })();
+</script>
+
+<!-- ====== CTA STRIP ====== -->
+<section class="cta-strip" id="contact">
+  <div class="container">
+    <h2>We answer the phone.</h2>
+    <p>Same-day scheduling with a NICET-certified specialist. Onsite assessment included with every proposal.</p>
+    <div style="display:flex;gap:0.875rem;justify-content:center;flex-wrap:wrap;">
+      <a href="tel:9709454043" class="btn btn--primary">Call 970-945-4043</a>
+      <a href="contact.html" class="btn btn--glass">Request a Callback &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logos/VisSec_white.svg" alt="Vision Security">
+        <p class="footer__address">
+          3710 Highway 82, Suite #3<br>
+          Glenwood Springs, CO 81601<br>
+          <a href="tel:9709454043">970-945-4043</a> &middot; 24/7<br>
+          <a href="mailto:adminsupport@visionsecurity.net">adminsupport@visionsecurity.net</a>
+        </p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services/fire-alarm.html">Fire Alarm</a></li>
+          <li><a href="services/security-systems.html">Security Systems</a></li>
+          <li><a href="services/video-surveillance.html">Video Surveillance</a></li>
+          <li><a href="services/access-control.html">Access Control</a></li>
+          <li><a href="services/inspections.html">Inspections</a></li>
+          <li><a href="services/monitoring.html">24/7 Monitoring</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Who We Serve</h4>
+        <ul>
+          <li><a href="for/estate-owners.html">Estate Owners</a></li>
+          <li><a href="for/homeowners.html">Local Homeowners</a></li>
+          <li><a href="for/property-managers.html">Property Managers</a></li>
+          <li><a href="for/contractors.html">General Contractors</a></li>
+          <li><a href="for/hospitality.html">Resort &amp; Hospitality</a></li>
+          <li><a href="for/multi-property.html">Multi-Property Owners</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources/compliance-calendar.html">Compliance Calendar</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://www.alarm.com/login.aspx">Alarm.com Login</a></li>
+          <li><a href="https://secure.cardknox.com/visionsecurity">Make a Payment</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div>&copy; 2026 Vision Security LLC &middot; Glenwood Springs, CO</div>
+      <div><a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll state
+  const nav = document.getElementById('nav');
+  if (nav) window.addEventListener('scroll', () => nav.classList.toggle('nav--scrolled', window.scrollY > 40));
+
+  // Mobile menu toggle
+  const toggle = document.getElementById('navToggle');
+  if (toggle && nav) toggle.addEventListener('click', () => {
+    nav.classList.toggle('nav--open');
+    toggle.setAttribute('aria-expanded', nav.classList.contains('nav--open'));
+  });
+
+  // Scroll reveal (excludes proof cards since they're animated by the marquee)
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.section h2, .tile, .capability-card, .persona-card, .proofpoint, .tech-card').forEach(el => {
+    el.classList.add('reveal');
+    io.observe(el);
+  });
+</script>
+
+</body>
+</html>
